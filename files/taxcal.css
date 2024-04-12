@@ -1,0 +1,112 @@
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 50px; 
+  border: 4px solid black;
+}
+h1{
+  text-align: center;
+  margin-top: 25px;
+}
+body{
+  background:url(vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg)
+}
+.form-container{
+  /* background-color: rgb(65, 182, 143); */
+  backdrop-filter: blur(10px);
+} 
+label{
+  font-weight: 700;
+}
+i[data-tool-tip]{
+  position: relative;
+  text-decoration: none;
+  color: rgba(233, 233, 233, 0.75);
+}
+
+i[data-tool-tip]::after{
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  padding: 1em 2em;
+  color: white;
+  border-radius: 9px;
+  font-size: .7em;
+  bottom: 0;
+  left: -180%;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: 0.3s all ease-in-out;
+}
+
+i[data-tool-tip]:hover::after{
+  transform: scale(1);
+  bottom: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 4s ;
+	stroke-width: 2;
+	stroke: #ffffff;
+	font-size: 100px;
+  font-weight: 700;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(16,12,15,0); stroke: rgba(92,89,75,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(16,12,15,0); stroke: rgba(92,89,75,1); }
+	80%  {fill: rgba(16,12,15,0); stroke: rgba(92,89,75,1); stroke-width: 3; }
+	100% {
+		fill: rgba(16,12,15,1); stroke: rgba(92,89,75,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper
+ {
+  background: transparent;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.popup{
+  width: 500px;
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  visibility: hidden; 
+  transition: transform 0.4s;
+  color: #333;
+  padding: 60px 32px 65px;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+}
+#closebtn{
+  margin-left: 32%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  width: 150px;
+}
+#closebtn:hover{
+  background-color: rgb(119, 119, 222);
+}
