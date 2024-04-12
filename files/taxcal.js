@@ -5,9 +5,7 @@ function openpopup() {
 function closepopup() {
   popup.classList.remove("open-popup");
 }
-document
-  .getElementById("grossamount")
-  .addEventListener("input", function valid() {
+document.getElementById("grossamount").addEventListener("input", function valid() {
     var value = this.value;
     var message = document.getElementById("message");
     if (isNaN(value)) {
