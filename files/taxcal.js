@@ -1,11 +1,11 @@
 let popup = document.querySelector("#popup");
-function openpopup() {
+function Openpopup() {
   popup.classList.add("open-popup");
 }
-function closepopup() {
+function Closepopup() {
   popup.classList.remove("open-popup");
 }
-document.getElementById("grossamount").addEventListener("input", function valid() {
+document.getElementById("grossamount").addEventListener("input", function Valid() {
     var value = this.value;
     var message = document.getElementById("message");
     if (isNaN(value)) {
